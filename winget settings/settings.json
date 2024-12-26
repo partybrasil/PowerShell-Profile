@@ -1,0 +1,95 @@
+{
+    "$schema": "https://aka.ms/winget-settings.schema.json",
+    "visual": {
+        "progressBar": "rainbow", // Opciones: "rainbow", "accent", "none"
+        "theme": "dark", // Opciones: "dark", "light", "system"
+        "animations": true, // Habilitar animaciones
+        "fontSize": 14, // Tamaño de fuente
+        "showDownloadSpeed": true, // Mostrar velocidad de descarga
+        "showEstimatedTime": true, // Mostrar tiempo estimado de descarga
+        "showRemainingAmount": true, // Mostrar cantidad restante de descarga
+        "progressBarColor": "blue", // Color de la barra de progreso
+        "backgroundColor": "black", // Color de fondo
+        "textColor": "white", // Color del texto
+        "accentColor": "cyan", // Color de acento
+        "errorColor": "red", // Color para errores
+        "warningColor": "yellow", // Color para advertencias
+        "successColor": "green" // Color para éxito
+    },
+    "source": {
+        "autoUpdateIntervalInMinutes": 5, // Intervalo de actualización automática en minutos
+        "defaultSource": "winget", // Fuente predeterminada
+        "additionalSources": [
+            {
+                "name": "myCustomSource",
+                "type": "Microsoft.Rest",
+                "arg": "https://mycustomsource.com/api"
+            }
+        ],
+        "sourcePriority": ["winget", "myCustomSource"] // Prioridad de las fuentes
+    },
+    "installBehavior": {
+        "disableTelemetry": true, // Deshabilitar la telemetría
+        "installScope": "user", // Opciones: "user", "machine"
+        "defaultInstallLocation": "C:\\Program Files", // Ubicación predeterminada de instalación
+        "allowPrerelease": false, // Permitir versiones preliminares
+        "autoAcceptEula": true // Aceptar automáticamente los EULA
+    },
+    "experimentalFeatures": {
+        "experimentalCmd": true, // Habilitar comandos experimentales
+        "experimentalArg": true, // Habilitar argumentos experimentales
+        "experimentalUI": false, // Habilitar UI experimental
+        "experimentalPackageManagement": false, // Habilitar gestión de paquetes experimental
+        "experimentalDependencyResolution": false, // Habilitar resolución de dependencias experimental
+        "experimentalParallelDownloads": true, // Habilitar descargas paralelas experimentales
+        "experimentalLocalManifest": false, // Habilitar manifiestos locales experimentales
+        "experimentalPackagePinning": false, // Habilitar fijación de paquetes experimental
+        "experimentalCustomInstallScripts": false // Habilitar scripts de instalación personalizados experimentales
+    },
+    "parallelDownloads": {
+        "maxConcurrentDownloads": 5, // Máximo de descargas concurrentes
+        "maxPartsPerDownload": 10 // Máximo de partes por descarga
+    },
+    "network": {
+        "proxy": "http://proxyserver:8080", // Configuración de proxy
+        "proxyUser": "username", // Usuario del proxy
+        "proxyPassword": "password", // Contraseña del proxy
+        "timeout": 30, // Tiempo de espera de red en segundos
+        "retryCount": 3 // Número de reintentos en caso de fallo de red
+    },
+    "logging": {
+        "level": "verbose", // Nivel de registro: "verbose", "info", "warning", "error"
+        "logFilePath": "C:\\Users\\party\\AppData\\Local\\Packages\\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\\LocalState\\DiagOutputDir\\winget.log", // Ruta del archivo de registro
+        "maxLogSize": 10485760, // Tamaño máximo del archivo de registro en bytes
+        "logRetentionDays": 7 // Días de retención de los registros
+    },
+    "cache": {
+        "cacheLocation": "C:\\Users\\party\\AppData\\Local\\Packages\\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\\LocalState\\Cache", // Ubicación de la caché
+        "cacheSizeLimit": 1024, // Límite de tamaño de la caché en MB
+        "cacheExpirationDays": 30 // Días de expiración de la caché
+    },
+    "security": {
+        "enableSandbox": false, // Habilitar sandbox (desactivado por defecto)
+        "verifySignatures": true, // Verificar firmas digitales
+        "allowUnsignedPackages": false // Permitir paquetes sin firmar (desactivado por defecto)
+    },
+    "updates": {
+        "autoUpdate": false, // Actualización automática (desactivado por defecto)
+        "updateCheckInterval": 1440, // Intervalo de verificación de actualizaciones en minutos
+        "notifyOnUpdate": true // Notificar cuando haya actualizaciones disponibles
+    },
+    "notifications": {
+        "enableNotifications": true, // Habilitar notificaciones
+        "notificationLevel": "info" // Nivel de notificaciones: "info", "warning", "error"
+    },
+    "backup": {
+        "enableBackup": false, // Habilitar copias de seguridad (desactivado por defecto)
+        "backupLocation": "D:\\Backups\\Winget", // Ubicación de las copias de seguridad
+        "backupIntervalDays": 7 // Intervalo de copias de seguridad en días
+    },
+    "performance": {
+        "enablePerformanceLogging": false, // Habilitar registro de rendimiento (desactivado por defecto)
+        "maxConcurrentDownloads": 3, // Máximo de descargas concurrentes
+        "downloadSpeedLimit": 1024 // Límite de velocidad de descarga en KB/s
+    }
+}
