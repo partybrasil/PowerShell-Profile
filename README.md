@@ -95,6 +95,26 @@ Copy-Item -Path .\Microsoft.PowerShell_profile.ps1 -Destination $PROFILE
 - [ ] Añadir soporte para la gestión de políticas de grupo (e.g., Get-GPO, Set-GPO).
 - [ ] Implementar funciones para la gestión de eventos del sistema (e.g., Get-EventLog, Clear-EventLog).
 - [ ] Crear funciones para la gestión de tareas de mantenimiento del sistema (e.g., Run-DiskCleanup, Run-Defrag).
+- [ ] Añadir soporte para la gestión de tareas de impresión (e.g., Print-Document, Cancel-PrintJob).
+- [ ] Implementar funciones para la gestión de perfiles de usuario (e.g., Export-UserProfile, Import-UserProfile).
+- [ ] Crear funciones para la gestión de configuraciones de red (e.g., Set-NetworkConfig, Get-NetworkConfig).
+- [ ] Incluir funciones para la gestión de sesiones remotas (e.g., Start-RemoteSession, Stop-RemoteSession).
+- [ ] Añadir soporte para la gestión de dispositivos Bluetooth (e.g., Pair-BluetoothDevice, Remove-BluetoothDevice).
+- [ ] Implementar funciones para la gestión de energía del sistema (e.g., Get-PowerPlan, Set-PowerPlan).
+- [ ] Crear alias para comandos de administración de Active Directory (e.g., Get-ADUser, New-ADUser).
+- [ ] Incluir funciones para la gestión de configuraciones de seguridad (e.g., Get-SecurityConfig, Set-SecurityConfig).
+- [ ] Añadir soporte para la gestión de configuraciones de firewall (e.g., Get-FirewallRule, Set-FirewallRule).
+- [ ] Implementar funciones para la gestión de configuraciones de proxy (e.g., Get-ProxyConfig, Set-ProxyConfig).
+- [ ] Crear funciones para la gestión de configuraciones de DNS (e.g., Get-DNSConfig, Set-DNSConfig).
+- [ ] Incluir funciones para la gestión de configuraciones de DHCP (e.g., Get-DHCPConfig, Set-DHCPConfig).
+- [ ] Añadir soporte para la gestión de configuraciones de VPN (e.g., Get-VPNConfig, Set-VPNConfig).
+- [ ] Implementar funciones para la gestión de configuraciones de Wi-Fi (e.g., Get-WiFiConfig, Set-WiFiConfig).
+- [ ] Crear alias para comandos de administración de IIS (e.g., Get-IISSite, Start-IISSite).
+- [ ] Incluir funciones para la gestión de configuraciones de correo electrónico (e.g., Get-EmailConfig, Set-EmailConfig).
+- [ ] Añadir soporte para la gestión de configuraciones de backup (e.g., Get-BackupConfig, Set-BackupConfig).
+- [ ] Implementar funciones para la gestión de configuraciones de restauración (e.g., Get-RestoreConfig, Set-RestoreConfig).
+- [ ] Crear funciones para la gestión de configuraciones de actualización del sistema (e.g., Get-UpdateConfig, Set-UpdateConfig).
+- [ ] Incluir funciones para la gestión de configuraciones de aplicaciones (e.g., Get-AppConfig, Set-AppConfig).
 ```
 
 ¡Disfruta de tu sesión personalizada de PowerShell! 🎉
